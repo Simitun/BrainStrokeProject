@@ -9,20 +9,20 @@ from sklearn.preprocessing import StandardScaler
 
 
 st.title('Brain Stroke Prediction')
-# def add_bg_from_url():
-#     st.markdown(
-#         f"""
-#         <style>
-#         .stApp{{
-#             background-image: url("https://www.freepik.com/free-photo/3d-medical-background-with-male-figure-with-brain-parts-highlighted_1212906.htm";
-#             background-attachment: fixed;
-#             background-size: cover
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html = True
-#     )
-# add_bg_from_url()
+def add_bg_from_url():
+    st.markdown(
+        f"""
+        <style>
+        .stApp{{
+            background-image: url("https://www.jaipurneuro.com/wp-content/uploads/2019/03/4.png");
+            background-attachment: fixed;
+            background-size: cover
+        }}
+        </style>
+        """,
+        unsafe_allow_html = True
+    )
+add_bg_from_url()
 
 BrainStroke = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
