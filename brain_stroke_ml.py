@@ -101,7 +101,7 @@ def InputUser():
              
     col1, col2 = st.columns(2)
     with col1:
-        Gender = st.selectbox('Gender: Female, Male, Other', ('Female', 'Male', 'Other'))
+        Gender = st.selectbox('Gender', ('Female', 'Male', 'Other'))
         if Gender == 'Female':
             gender = 0
         elif Gender == 'Male':
@@ -113,13 +113,13 @@ def InputUser():
         
     col1, col2 = st.columns(2)        
     with col1:
-        Hypertension = st.selectbox('Hypertension: No, Yes', ('No', 'Yes'))
+        Hypertension = st.selectbox('Hypertension', ('No', 'Yes'))
         if Hypertension == 'No':
             hypertension = 0
         else:
             hypertension = 1        
     with col2:
-        HeartDisease = st.selectbox('Heart Disease: No, Yes', ('No', 'Yes'))
+        HeartDisease = st.selectbox('Heart Disease', ('No', 'Yes'))
         if HeartDisease == 'No':
             heart_disease = 0
         else:
@@ -127,13 +127,13 @@ def InputUser():
   
     col1, col2 = st.columns(2)    
     with col1:
-        Ever_Married = st.selectbox('Ever Married: No, Yes', ('No', 'Yes'))
+        Ever_Married = st.selectbox('Ever Married', ('No', 'Yes'))
         if Ever_Married == 'No':
             ever_married = 0
         else:
             ever_married = 1
     with col2:
-        Work_Type = st.selectbox('Work Type: Government Job, Never Worked, Private, Self-employed, Children', ('Government Job', 'Never Worked', 'Private', 'Self-employed', 'Children'))
+        Work_Type = st.selectbox('Work Type', ('Government Job', 'Never Worked', 'Private', 'Self-employed', 'Children'))
         if Work_Type == 'Government Job':
             work_type = 0
         elif Work_Type == 'Never Worked':
@@ -147,7 +147,7 @@ def InputUser():
         
     col1, col2 = st.columns(2)        
     with col1:
-        Residence = st.selectbox('Residence: Rural, Urban', ('Rural', 'Urban'))
+        Residence = st.selectbox('Residence Type', ('Rural', 'Urban'))
         if Residence == 'Rural':
             residence = 0
         else:
@@ -157,9 +157,9 @@ def InputUser():
         
     col1, col2 = st.columns(2)        
     with col1:
-        BMI = st.number_input('Blood Pressure: Please enter from 10 to 98', min_value = 10.00, max_value = 98.00, value = 72.00, step = 0.5)
+        BMI = st.number_input('Body Mass Index: Please enter from 10 to 98', min_value = 10.00, max_value = 98.00, value = 72.00, step = 0.5)
     with col2:
-        Smoking_Status = st.selectbox('Smoking Status: Unknown, Formely Smoked, Never Smoked, Smokes', ('Unknown', 'Formely Smoked', 'Never Smoked', 'Smokes'))
+        Smoking_Status = st.selectbox('Smoking Status', ('Unknown', 'Formely Smoked', 'Never Smoked', 'Smokes'))
         if Smoking_Status == 'Unknown':
             smoking_status = 0
         elif Smoking_Status == 'Formely Smoked':
@@ -196,7 +196,7 @@ if classifier == 'Logistic Regression':
     x_test_pred = LR_model.predict(x_test)
     
     input_df = InputUser()
-    test_button = st.button('Predict Result')
+    test_button = st.button('Check result')
     if test_button:
         input_data_as_numpy_array = np.asarray(input_df)
         input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -219,7 +219,7 @@ if classifier == 'Naive Bayes':
         x_test_pred = NB_model.predict(x_test)
     
         input_df = InputUser()
-        test_button = st.button('Predict Result')
+        test_button = st.button('Check result')
         if test_button:
             input_data_as_numpy_array = np.asarray(input_df)
             input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -242,7 +242,7 @@ if classifier == 'K-Nearest Neighbors':
         x_test_pred = KNN_model.predict(x_test)
     
         input_df = InputUser()
-        test_button = st.button('Predict Result')
+        test_button = st.button('Check result')
         if test_button:
             input_data_as_numpy_array = np.asarray(input_df)
             input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -265,7 +265,7 @@ if classifier == 'Support Vector Machine':
         x_test_pred = SVM_model.predict(x_test)
     
         input_df = InputUser()
-        test_button = st.button('Predict Result')
+        test_button = st.button('Check result')
         if test_button:
             input_data_as_numpy_array = np.asarray(input_df)
             input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -288,7 +288,7 @@ if classifier == 'Decision Tree Classifier':
     x_test_pred = DTC_model.predict(x_test)
     
     input_df = InputUser()
-    test_button = st.button('Predict Result')
+    test_button = st.button('Check result')
     if test_button:
         input_data_as_numpy_array = np.asarray(input_df)
         input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -311,7 +311,7 @@ if classifier == 'Random Forest Classifier':
     x_test_pred = RFC_model.predict(x_test)
     
     input_df = InputUser()
-    test_button = st.button('Predict Result')
+    test_button = st.button('Check result')
     if test_button:
         input_data_as_numpy_array = np.asarray(input_df)
         input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
@@ -334,7 +334,7 @@ if classifier == 'XGB Classifier':
     x_test_pred = XGB_model.predict(x_test)
     
     input_df = InputUser()
-    test_button = st.button('Predict Result')
+    test_button = st.button('Check result')
     if test_button:
         input_data_as_numpy_array = np.asarray(input_df)
         input_data_reshaped = input_data_as_numpy_array.reshape(1 , -1)
