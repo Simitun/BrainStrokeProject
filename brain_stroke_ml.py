@@ -113,7 +113,7 @@ def InputUser():
         
     col1, col2 = st.columns(2)        
     with col1:
-        Hypertension = st.selectbox('Hypertension', ('No', 'Yes'))
+        Hypertension = st.selectbox('Hypertension(High Blood Pressure)', ('No', 'Yes'))
         if Hypertension == 'No':
             hypertension = 0
         else:
@@ -157,7 +157,7 @@ def InputUser():
         
     col1, col2 = st.columns(2)        
     with col1:
-        BMI = st.number_input('Body Mass Index: Please enter from 10 to 98', min_value = 10.00, max_value = 98.00, value = 72.00, step = 0.5)
+        BMI = st.number_input('BMI(Body Mass Index): Please enter from 10 to 98', min_value = 10.00, max_value = 98.00, value = 72.00, step = 0.5)
     with col2:
         Smoking_Status = st.selectbox('Smoking Status', ('Unknown', 'Formely Smoked', 'Never Smoked', 'Smokes'))
         if Smoking_Status == 'Unknown':
