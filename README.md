@@ -10,8 +10,11 @@ Abstract
 Goal of project
 
   Our goals doing this project are:
-to affect the people, 
+  
+to affect the people,
+
 to support the medical center in another way,
+
 to improve the AI technology
 
 Difficulties
