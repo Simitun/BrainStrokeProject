@@ -433,17 +433,17 @@ if ExpScores:
 datas = st.sidebar.selectbox('About Health Knowledge', ('Causing Facts', 'Prevention Facts', 'Showing Signs'))
 if datas == 'Causing Facts':
     #st.metric(label = 'Causing Facts!', value = 'Hypertension (high blood pressure), Heart Disease, Diabetes')
-    Facts = 'Facts on Causing Brain Stroke  =>  Hypertension (high blood pressure), Heart Disease, Diabetes'
+    Facts = 'Causing Facts  =>  Hypertension (high blood pressure), Heart Disease, Diabetes'
     st.write(Facts)
 
 if datas == 'Prevention Facts':    
     #st.metric(label = "Pervention Facts!", value = "Choose healthy foods and drinks, Keep a healthy weight, Get regular physical activity, Don't smoke, Limit alcohol, Check cholesterol, Control blood pressure, Control diabetes")
-    Facts = "Facts on Preventing Brain Stroke  =>  Choose healthy foods and drinks, Keep a healthy weight, Get regular physical activity, Don't smoke, Limit alcohol, Check cholesterol, Control blood pressure, Control diabetes"
+    Facts = "Preventing Facts  =>  Choose healthy foods and drinks, Keep a healthy weight, Get regular physical activity, Don't smoke, Limit alcohol, Check cholesterol, Control blood pressure, Control diabetes"
     st.write(Facts)
 
-if datas == 'Showing Signs':
+if datas == 'Showing Symptoms':
     #st.metric(label = 'Showing Symptoms!', value = 'Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause')
-    Facts = 'Signs of Brain Stroke  =>  Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause'
+    Facts = 'Showing Symptoms  =>  Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause'
     st.write(Facts)    
 
 
