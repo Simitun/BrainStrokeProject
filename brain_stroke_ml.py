@@ -442,7 +442,7 @@ if datas == 'Prevention Facts':
     st.write(Facts)
 
 if datas == 'Showing Signs':
-    #st.metric(label = 'Showing Signs!', value = 'Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause')
+    #st.metric(label = 'Showing Symptoms!', value = 'Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause')
     Facts = 'Signs of Brain Stroke  =>  Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause'
     st.write(Facts)    
 
