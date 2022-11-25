@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import sklearn
+import sklearn
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 #import pickle
 from sklearn.preprocessing import LabelEncoder
