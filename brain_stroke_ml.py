@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import sklearn
+//import sklearn
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 #import pickle
 from sklearn.preprocessing import LabelEncoder
@@ -444,24 +444,3 @@ if datas == 'Symptoms':
     #st.metric(label = 'Symptoms!', value = 'Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause')
     Facts = 'Symptoms  =>  Sudden numbness or weakness in the face, arm or leg (especially on one side of the body), Sudden vision problems in one or both eyes, Severe headache with no known cause'
     st.write(Facts)    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
